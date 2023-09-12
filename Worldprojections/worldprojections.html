@@ -17,7 +17,7 @@
         help visualize the distortion put on the map by different projections.</p>
     
     <h2>WGS84 Projection</h2>
-    <h3>This variant of the Mercator projection preserves the shape of countries, but distorts their area. Notice how Greenland, a country 1/8the size of Africa, appears just as large as the African continent. 
+    <h3>This variant of the Mercator projection preserves the shape of countries and direction, but distorts their area. Notice how Greenland, a country 1/8the size of Africa, appears just as large as the African continent. 
         The closer a country is to the equator, the less distortion it suffers. This projection is commonly used in classrooms and is used by Google Maps. 
     </h3>
     <a href=".//maps/4326.png">
@@ -34,7 +34,10 @@
     </a>
     <h1 style="color:purple"> My Projections</h1>
     <h2> Pseudo-Mercantor Projection</h2>
-    <h3>Some observations</h3>
+    <h3>This cylindrical projection is also called the Web Mercator projection 
+        because it is commonly used on computers to look at the Earth. It is useful because 
+        although it distorts area and shape, it preserves direction. 
+    </h3>
     <a href="./QGIS_Projections/EPSG3857_Map.png">
     <img src="./QGIS_Projections/EPSG3857_Map.png" width='500px'>
     </a>
@@ -47,29 +50,49 @@
     </a>
     <h2>Cylindrical Equal Area Projection</h2>
     <h3>This projection has a distinct horizontal stretch. This map preserves the area of countries
-        but distorts their shapes. It looks like it could be created by wrapping a cylinder around a globe
+        and direction, but it distorts their shapes. There is minimal distortion along the Equator. It looks like it could be created by wrapping a cylinder around a globe
         horizontally, with the bases oriented facing east and west.
     </h3>
     <a href="./QGIS_Projections/54034_Map.png">
     <img src="./QGIS_Projections/54034_Map.png" width='500px'>
     </a>
     <h2>Equidistant Conic Projection</h2>
-    <h3>Some observations</h3>
+    <h3>This projection preserves distances along meridians but distorts shape, area,
+        direction, and angles between latitude/longitude lines. On this projection, distortion is minimal
+        around the North Pole, but increases with distance from the North Pole. Interestingly, Antarctica appears bigger than all
+        other land masses combined. 
+    </h3>
     <a href="./QGIS_Projections/54027_Map.png">
     <img src="./QGIS_Projections/54027_Map.png" width='500px'>
     </a>
     <h2>North Pole Azimuthal Equidistant Projection</h2>
-    <h3>Some observations</h3>
+    <h3>This projection is extremely similar to the Equidistant Conic projection,
+        but its cone shape seems to wrap completely around the globe. Compare this projection 
+        Anarctica which meets end to end with the previous projection's Antarctica which has a 
+        significant gap between the two edges. This projection also sees minimal distortion around
+        the North Pole and immense distortion with increasing distance from its center. This projection 
+        is used by the United Nations. It stands out to me because it shows how closely connected
+        the continents are and how they are also quite concentrated in the northern hemisphere.
+    </h3>
     <a href="./QGIS_Projections/102016_Map.png">
     <img src="./QGIS_Projections/102016_Map.png" width='500px'>
     </a>
     <h2>Polyconic Projection</h2>
-    <h3>Some observations</h3>
+    <h3>Unlike the last two projections, this projection preserves area and shape
+        around both of the globe's poles. It preserves shape, area, distance, and direction
+        along the Prime Meridian. This projection curves the rest of the globe around 
+        the poles giving us the most accurate depiction of Antarctica's shape and size 
+        compared to any other projections I have included on this site. 
+    </h3>
     <a href="./QGIS_Projections/54021_Map_Polyconic.png">
     <img src="./QGIS_Projections/54021_Map_Polyconic.png" width='500px'>
     </a>
     <h2>Van der Grinten Projection</h2>
-    <h3>Some observations</h3>
+    <h3>This projection preserves area and shape along the Equator, Tropic of Cancer, and Tropic
+        of Capricorn, but suffers extreme distortion along the Poles. It has a rounded shape with no 
+        curvature along the Prime Meridian, but increasing curvature along longitude lines
+        moving away from the Prime Meridian. 
+    </h3>
     <a href="./QGIS_Projections/54029_Map_weird.png">
     <img src="./QGIS_Projections/54029_Map_weird.png" width='500px'>
     </a>
