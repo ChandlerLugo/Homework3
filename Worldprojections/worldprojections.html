@@ -9,7 +9,12 @@
     <h1>In this project I learned how to display images in different projections</h1>
     
     <h2 style="color:rgb(178, 178, 252)">How I displayed maps in different projections using QGIS</h2>
-    <p>You can write a paragraph here</p>
+    <p>First, I downloaded a world map shape file that also depicts the world's country borders. 
+        After importing this file into QGIS, I changed Coordinate Reference System to whichever projection 
+        I wanted to use. The default projection was WGS84 (EPSG:4326). I also needed to install a plug-in
+        for my projections. Using the "Manage and Install Plug-ins" feature, I was able to install the Indicatrix
+        Mapper. This plug-in added a layer of circles and latitude/longitude lines over my shape file that
+        help visualize the distortion put on the map by different projections.</p>
     
     <h2>WGS84 Projection</h2>
     <h3>This variant of the Mercator projection preserves the shape of countries, but distorts their area. Notice how Greenland, a country 1/8the size of Africa, appears just as large as the African continent. 
@@ -34,12 +39,17 @@
     <img src="./QGIS_Projections/EPSG3857_Map.png" width='500px'>
     </a>
     <h2>Winkel Tripel Projection</h2>
-    <h3>Some observations</h3>
+    <h3>This projection has a round shape resulting in less distortion of area and shape near 
+        the poles. This map is a compromise between distortion of area, distance, and direction.
+    </h3>
     <a href="./QGIS_Projections/53018_Map.png">
     <img src="./QGIS_Projections/53018_Map.png" width='500px'>
     </a>
     <h2>Cylindrical Equal Area Projection</h2>
-    <h3>Some observations</h3>
+    <h3>This projection has a distinct horizontal stretch. This map preserves the area of countries
+        but distorts their shapes. It looks like it could be created by wrapping a cylinder around a globe
+        horizontally, with the bases oriented facing east and west.
+    </h3>
     <a href="./QGIS_Projections/54034_Map.png">
     <img src="./QGIS_Projections/54034_Map.png" width='500px'>
     </a>
